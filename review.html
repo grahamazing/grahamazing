@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- header section starts -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> 
+            <img src="images/logo1.png" alt="Grahamazing Logo" style="height: 50px; width: auto;">
+            Grahamazing
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="gallery.html">gallery</a>
+            <a href="menu.html">menu</a>
+            <a href="review.html"class="active">review</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="dark-mode-icon"></i>
+                <i class="fas fa-sun" id="light-mode-icon" style="display: none;"></i>
+            </div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" id="search-box" placeholder="search here..">
+            <label class="fas fa-search"></label>
+        </form>
+
+    <!-- shopping cart -->
+
+    <div class="shopping-cart">
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart1.png" alt="">
+            <div class="content">
+                <h3>Cream Cheese</h3>
+                <span class="price">₱50.00/=</span>
+                <span class="quantity"> qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart2.png" alt="">
+            <div class="content">
+                <h3>Cookies & Cream Dream</h3>
+                <span class="price">₱50.00/=</span>
+                <span class="quantity"> qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart3.png" alt="">
+            <div class="content">
+                <h3>Mango Melody</h3>
+                <span class="price">₱50.00/=</span>
+                <span class="quantity"> qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart4.png" alt="">
+            <div class="content">
+                <h3>Milo Supreme</h3>
+                <span class="price">₱50.00/=</span>
+                <span class="quantity"> qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart5.png" alt="">
+            <div class="content">
+                <h3>Cafe Delight</h3>
+                <span class="price">₱50.00/=</span>
+                <span class="quantity"> qty: 1</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="images/cart6.png" alt="">
+            <div class="content">
+                <h3>Fruit Burst</h3>
+                <span class="price">₱50.00/=</span>
+                <span class="quantity"> qty: 1</span>
+            </div>
+        </div>
+        <div class="total">total : ₱300.00</div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+
+        <!-- login -->
+
+        <form action="" class="login-form">
+            <h3>login form</h3>
+            <input type="email" placeholder="Your Email" class="box">
+            <input type="password" placeholder="Your Password" class="box">
+            <p>forget your password <a href="#"> click here</a></p>
+            <p>don't have an account? <a href="#"> create now</a></p>
+            <input type="submit" value="login" class="btn">
+        </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- sub heading -->
+
+    <div class="sub-heading">
+        <h1>customer's review</h1>
+    </div>
+
+    <!-- end -->
+
+    <!-- review section starts -->
+
+    <section class="review">
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/quote-left.png" width="25" height="25" alt="">
+                    <img src="images/cr1.png" alt="" class="user">
+                    <img src="images/quote-right.png" width="25" height="25" alt="">
+                </div>
+                <h3>Mariedel Carlos</h3>
+                <h4>Flavor: Mango Melody</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>The graham bar is good, the sweetness is just right and the mango is sweet just how I like it. Overall it's delicious and surely I will buy again.</p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/quote-left.png" width="25" height="25" alt="">
+                    <img src="images/cr2.png" alt="" class="user">
+                    <img src="images/quote-right.png" width="25" height="25" alt="">
+                </div>
+                <h3>Ma. Cristina Mendoza</h3>
+                <h4>Flavor: Cookies & Cream Dream</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>The graham bar tastes great, such a perfect go-to snack. And there's a lot of flavor to choose from. As for me, I really love the coffee one. </p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/quote-left.png" width="25" height="25" alt="">
+                    <img src="images/cr3.png" alt="" class="user">
+                    <img src="images/quote-right.png" width="25" height="25" alt="">
+                </div>
+                <h3>Cathrina Sadia</h3>
+                <h4>Flavor: Cream Cheese</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p> I only tasted one flavor, which is cheesecake. It taste savor, but i think it will be better if reduce the amount of condensed.</p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/quote-left.png" width="25" height="25" alt="">
+                    <img src="images/cr4.png" alt="" class="user">
+                    <img src="images/quote-right.png" width="25" height="25" alt="">
+                </div>
+                <h3>Annelie Galvero</h3>
+                <h4>Flavor: Mango Melody</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>The grahamazing bar have a great combination of flavor and texture, perfect for a quick snack</p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/quote-left.png" width="25" height="25" alt="">
+                    <img src="images/cr5.png" alt="" class="user">
+                    <img src="images/quote-right.png" width="25" height="25" alt="">
+                </div>
+                <h3>Andrei Maraya</h3>
+                <h4>Flavor: Milo Supreme</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p>The Chocolate Graham Bar offers a delightful blend of smooth, creamy chocolate and crunchy, slightly sweet graham cracker. It’s a satisfying snack with a perfect balance of textures and flavors, making it ideal for a quick treat.</p>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/quote-left.png" width="25" height="25" alt="">
+                    <img src="images/cr6.png" alt="" class="user">
+                    <img src="images/quote-right.png" width="25" height="25" alt="">
+                </div>
+                <h3>Andrea Hernacio</h3>
+                <h4>Flavor: Mango Melody</h4>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>It's so creamy and delicious especially the first bite. I am not fan of cheesecake but it makes it interesting. So 5 ratings.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- review section ends -->
+
+
+
+
+
+
+
+
+
+
+   <!-- footer section starts -->
+
+   <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3><img src="images/logo1.png" class="footer-logo"> Grahamazing </h3> 
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +639628809203</a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> grahamazing.main@gmail.com</a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> 18 Kyoto Street, BF Homes, Parañque Philippines</a>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>useful links</h3>
+            <p class=""> <a href="https://www.facebook.com/share/15pBVAR2u2/">Facebook:grahamazing</a></p>
+            <p class=""> <a href="https://www.instagram.com/grah.amazing?igsh=MW13YXphenM4Zzljcg==">Instragram:grah.mazing
+            </a></p>
+        </div>
+
+        
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest update</p>
+            <form action="">
+                <input type="email" placeholder="enter your email">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+    <div class="credit">  <span>© 2024 Grahamazing.</span> | All Rights Reserved! </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
