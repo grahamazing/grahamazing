@@ -101,6 +101,8 @@ section{
     color: var(--color);
     cursor: pointer;
     text-transform: capitalize;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 .btn:hover{
@@ -302,7 +304,7 @@ section{
 }
 
 .header .shopping-cart .total{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     padding: 1rem 0;
     text-align: center;
     color: var(--color);
@@ -376,7 +378,7 @@ section{
 /* home */
 
 .home{
-    background: url("images/bg2.png") no-repeat;
+    background: url("images/background.png") no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 110vh;
@@ -386,7 +388,7 @@ section{
 
 .home .content{
     width: 55rem;
-    text-align: center;
+    text-align: left;
 }
 
 .home .content h3{
@@ -394,6 +396,7 @@ section{
     color: var(--color);
     font-family: 'Merienda One', cursive;
     color: #8c4e26cf;
+    text-align: left;
 }
 
 .about .content h4 {
@@ -413,11 +416,12 @@ section{
     line-height: 2;
     text-transform: initial;    
     transition: all .2s linear;
+    text-align: left;
 }
 
 .home .content .btn{
     color: #8c4e26;
-    border: 1px solid white
+    border: 2px solid #8c4e26;
 }
 
 .home .content .btn:hover{
@@ -504,10 +508,15 @@ transition: background 1s ease-in-out;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1em;
+    align-items: center;
+    text-align: center;
 }
 
 .carousel .list .item .info .des{
     margin: 1em 0;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3rem;
 }
 
 .carousel .list .item .info a{
@@ -517,13 +526,16 @@ transition: background 1s ease-in-out;
     color: #eee;
     font-weight: 500;
 }
+
 /* set active item */
 .carousel .list .item{
     z-index: 1;
 }
+
 .carousel .list .item.active{
     z-index: 2;
 }
+
 .carousel .list .item.active .image{
     --left: 0;
 }
@@ -692,13 +704,16 @@ transition: background 1s ease-in-out;
 /* end */
 
 
-/* offer */
 
+/* Offer Table */
 .offer-table {
     display: flex;
     justify-content: space-around;
     margin: 20px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
+
+/* Offer Box */
 .offer-box {
     border: 3px solid #8c4e26;
     padding: 20px;
@@ -706,21 +721,39 @@ transition: background 1s ease-in-out;
     width: 30%;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
     height: 20rem;
+    margin: 10px; /* Add margin for better spacing on smaller screens */
+    border-radius: 10px;
 }
 
+/* Offer Box Content */
 .offer-box h2 {
     font-size: 3em;
     margin: 0;
     color: #666;
-    
 }
 
 .offer-box p {
     font-size: 2em;
     margin: 10px 0 0 0; 
     color: #8c4e26;
-
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .offer-box {
+        width: 100%; /* Full width for mobile devices */
+        height: auto; /* Adjust height for mobile devices */
+    }
+
+    .offer-box h2 {
+        font-size: 2em; /* Adjust font size for mobile devices */
+    }
+
+    .offer-box p {
+        font-size: 1.5em; /* Adjust font size for mobile devices */
+    }
+}
+
  
 /* end */
 
@@ -743,6 +776,7 @@ transition: background 1s ease-in-out;
     width: 980px; /* Ensures the image doesn't overflow its container */
     height: 480px; /* Maintains aspect ratio */
     margin: 0 auto; /* Centers the image horizontally */
+    border-radius: 10px;
 }
 
 .about .content {
@@ -824,6 +858,7 @@ transition: background 1s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
 }
 
 /* Image Container */
@@ -841,11 +876,12 @@ transition: background 1s ease-in-out;
     width: 100%;
     height: 100%;
     object-fit: cover; /* Ensures the image fills the container without distortion */
+    border-radius: 10px;
 }
 
 /* Content Styling */
 .menu .box-container .box .content h3 {
-    color: #222;
+    color: #666;
     font-size: 2rem;
     margin-top: 2rem;
 }
@@ -873,17 +909,6 @@ transition: background 1s ease-in-out;
     font-size: 1.5rem;
 }
 
-/* Icons Styling */
-.menu .box-container .box .icons a {
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    border: .1rem solid #333;
-    color: #8c4e26;
-    margin: 2rem;
-}
-
 .menu .box-container .box .icons a:hover {
     background: var(--color);
     color: #fff;
@@ -893,6 +918,12 @@ transition: background 1s ease-in-out;
 .menu .box-container::-webkit-scrollbar {
     display: none; /* Hide unnecessary scrollbar */
 }
+
+.menu .content .btn{
+    color: #8c4e26;
+    border: 1px solid white
+}
+
 
 /* end */
 
@@ -1298,12 +1329,12 @@ body.dark-mode {
     overflow: hidden; /* To contain the icons within the box */
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #01000000;
     margin: 10px;
     padding: 20px;
     text-align: center;
     width: 300px;
-    height: 300px;
+    height: 320px;
     transition: background-color 0.3s ease;
 }
 
@@ -1328,17 +1359,16 @@ body.dark-mode {
 }
 
 .team-member:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Light black transparent background on hover */
+    background-color: rgba(5, 5, 5, 5); /* Light black transparent background on hover */
 }
 
 .social-icons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+    display: flex;
+    justify-content: center; /* Centers icons */
+    gap: 10px; /* Adds space between icons */
+    margin-top: 10px; /* Adds spacing from the paragraph */
+    opacity: 0; /* Initially hidden */
     transition: opacity 0.3s ease;
-    bo
 }
 
 .team-member:hover .social-icons {
